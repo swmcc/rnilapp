@@ -2,8 +2,24 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
-# Assets should be precompiled for production (so we don't need the gems loaded then)
-Bundler.require(*Rails.groups(assets: %w(development test)))
+# Gem Groups that are universally included
+app_groups = [
+  :datastores,
+  :ui_frameworks,
+  :analytics,
+  :file_uploads,
+  :forms,
+  :backoffice,
+  :rails_ext,
+  :misc
+]
+
+# Gem Groups included in some environments
+env_groups = {
+  assets: %w(development test)
+}
+
+Bundler.require(*app_groups, *Rails.groups(env_groups))
 
 module RenameItLater
   class Application < Rails::Application
