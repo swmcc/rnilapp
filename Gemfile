@@ -24,11 +24,11 @@ group :development do
     gem 'ruby_gntp', require: false # Windows / OSX
     gem 'libnotify', require: false # Linux
 
-  gem 'guard-rails'
-  gem 'guard-rspec'
-  gem 'guard-jasmine'
   gem 'guard-bundler'
   gem 'guard-migrate'
+  gem 'guard-rails'
+  gem 'guard-rspec'
+  #gem 'guard-jasmine'
 end
 
 group :test do
