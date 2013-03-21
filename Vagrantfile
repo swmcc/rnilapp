@@ -3,6 +3,7 @@
 
 Vagrant::Config.run do |config|
   config.vm.box = "corundum"
-  # TODO: Set to corundum v0.9 distrib url once published
-  # config.vm.box_url = "NYI"
+  config.vm.box_url = "https://dl.dropbox.com/s/ufuhzalim0cuct7/corundum-v0.5.0.box"
+
+  config.vm.host_name = "rnil-dev"
 end
