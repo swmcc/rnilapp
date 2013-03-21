@@ -16,13 +16,13 @@ group :development do
 
   gem 'guard'
   # Filesystem API
-    gem 'rb-inotify', :require => false # Linux
-    gem 'rb-fsevent', :require => false # OSX
-    gem 'rb-fchange', :require => false # Windows
+    gem 'rb-inotify', require: false # Linux
+    gem 'rb-fsevent', require: false # OSX
+    gem 'rb-fchange', require: false # Windows
   # Notification API
-    gem 'terminal-notifier-guard', :require => false # OSX 10.8+
-    gem 'ruby_gntp', :require => false # Windows / OSX
-    gem 'libnotify', :require => false # Linux
+    gem 'terminal-notifier-guard', require: false # OSX 10.8+
+    gem 'ruby_gntp', require: false # Windows / OSX
+    gem 'libnotify', require: false # Linux
 
   gem 'guard-rails'
   gem 'guard-rspec'
@@ -34,7 +34,7 @@ end
 group :test do
   gem 'capybara'
   gem 'poltergeist', git: 'git://github.com/jonleighton/poltergeist.git'
-  gem 'phantomjs'
+  gem 'phantomjs', require:'phantomjs/poltergeist'
   gem 'launchy' # Allows capybara to open a browser
 end
 
