@@ -6,11 +6,11 @@ require 'rails/all'
 app_groups = [
   :datastores,
   :ui_frameworks,
-  :analytics,
-  :file_uploads,
-  :forms,
-  :backoffice,
-  :rails_ext,
+  #:analytics,
+  #:file_uploads,
+  #:forms,
+  #:backoffice,
+  #:rails_ext,
   :misc
 ]
 
