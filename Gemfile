@@ -68,7 +68,8 @@ group :analytics do
 end
 
 group :file_uploads do
-  gem 'rmagick'
+  # Don't need this just yet
+  #gem 'rmagick'
   gem 'carrierwave'
 end
 
