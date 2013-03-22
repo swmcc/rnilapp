@@ -1,6 +1,11 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
+require 'etc'
+
+notification :gntp, :host => '10.0.2.2' if Etc.getlogin == 'vagrant'
+
+
 guard 'bundler' do
   watch('Gemfile')
   # Uncomment next line if Gemfile contain `gemspec' command

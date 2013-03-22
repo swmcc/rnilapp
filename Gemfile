@@ -20,9 +20,7 @@ group :development do
     gem 'rb-fsevent', require: false # OSX
     gem 'rb-fchange', require: false # Windows
   # Notification API
-    gem 'terminal-notifier-guard', require: false # OSX 10.8+
     gem 'ruby_gntp', require: false # Windows / OSX
-    gem 'libnotify', require: false # Linux
 
   gem 'guard-bundler'
   gem 'guard-migrate'
