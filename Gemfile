@@ -66,6 +66,8 @@ end
 group :security do
   # TODO: Move to released versions ASAP
   gem 'devise', git: 'git://github.com/plataformatec/devise.git', branch: 'rails4'
+  # TODO: Drop this when devise supported Strong Params
+  gem 'protected_attributes'
 end
 
 group :analytics do

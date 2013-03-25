@@ -139,6 +139,8 @@ GEM
     phantomjs (1.8.1.1)
       poltergeist
     polyglot (0.3.3)
+    protected_attributes (1.0.0)
+      activemodel (>= 4.0.0.beta, < 5.0)
     pry (0.9.12)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
@@ -260,6 +262,7 @@ DEPENDENCIES
   launchy
   phantomjs
   poltergeist!
+  protected_attributes
   pry
   rails (= 4.0.0.beta1)
   rails_settings!
