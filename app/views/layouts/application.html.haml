@@ -18,9 +18,9 @@
 
 
   %body
-    .navbar.navbar-fixed-top
+    .navbar.navbar-fluid-top
       .navbar-inner
-        .container
+        .container-fluid
           %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
             %span.icon-bar
             %span.icon-bar
@@ -32,20 +32,19 @@
               %li= link_to "Link 2", "/path2"
               %li= link_to "Link 3", "/path3"
 
-    .container
+    .container-fluid
 
-      .row
-        .span9
-          = bootstrap_flash
-          = yield
+      .row-fluid
         .span3
           .well.sidebar-nav
-            %h3 Sidebar
             %ul.nav.nav-list
               %li.nav-header Sidebar
               %li= link_to "Link 1", "/path1"
               %li= link_to "Link 2", "/path2"
               %li= link_to "Link 3", "/path3"
+        .span9
+          = bootstrap_flash
+          = yield
     
       %footer
         %p &copy; Company 2013
