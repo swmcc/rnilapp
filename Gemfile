@@ -86,7 +86,7 @@ group :rails_ext do
   # Humanized urls
   gem 'friendly_id'
   # Simple single-file config helper
-  # gem 'rails_settings', git: "git://github.com/brrygrdn/rails_settings.git"
+  gem 'rails_settings', git: "git://github.com/brrygrdn/rails_settings.git"
 end
 
 # Additional Rails 4 defaults
