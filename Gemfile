@@ -26,6 +26,7 @@ group :development do
   gem 'guard-migrate'
   gem 'guard-rails'
   gem 'guard-rspec'
+  # FIXME: Jasmine blocked
   #gem 'guard-jasmine'
 end
 
@@ -39,7 +40,7 @@ end
 group :test, :development do
   # Testing tools
   gem 'rspec-rails', '~> 2.0'
-  # Internal routes currently broken in Rails 4
+  # FIXME: Internal routes currently broken in Rails 4
   # gem "jasminerice"
 
   # Debug
@@ -58,6 +59,7 @@ group :ui_frameworks do
   gem 'jquery-rails'
   gem "haml-rails"
   gem "twitter-bootstrap-rails"
+  # FIXME: No Rails 4 fork yet
   #gem "rails-backbone"
 end
 
@@ -66,16 +68,18 @@ group :analytics do
 end
 
 group :file_uploads do
-  # Don't need this just yet
+  # TODO: Don't need this just yet
   #gem 'rmagick'
   gem 'carrierwave'
 end
 
 group :forms do
+  # TODO: Don't need this just yet
   #gem 'mail_form'
   gem 'client_side_validations'
 end
 
+# TODO: No Rails 4 fork for ActiveAdmin yet
 group :backoffice do
   #gem 'activeadmin'
   #gem 'active_admin_sortable', git: "git://github.com/krhorst/active_admin_sortable.git"
