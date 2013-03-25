@@ -57,10 +57,15 @@ end
 
 group :ui_frameworks do
   gem 'jquery-rails'
-  gem "haml-rails"
-  gem "twitter-bootstrap-rails"
+  gem 'haml-rails'
+  gem 'twitter-bootstrap-rails'
   # FIXME: No Rails 4 fork yet
   #gem "rails-backbone"
+end
+
+group :security do
+  # TODO: Move to released versions ASAP
+  gem 'devise', git: 'git://github.com/plataformatec/devise.git', branch: 'rails4'
 end
 
 group :analytics do
@@ -90,7 +95,7 @@ group :rails_ext do
   # Humanized urls
   gem 'friendly_id'
   # Simple single-file config helper
-  gem 'rails_settings', git: "git://github.com/brrygrdn/rails_settings.git"
+  gem 'rails_settings', git: 'git://github.com/brrygrdn/rails_settings.git'
 end
 
 # Additional Rails 4 defaults
