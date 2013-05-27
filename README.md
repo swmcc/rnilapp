@@ -1,5 +1,9 @@
-rename-it-later
-===============
+# rename-it-later
+
+## Important Note
+
+This was a proof of concept app. [Barry](https://github.com/brrygrdn) wrote most of this however it wasn't meant to be as the idea was scratching an itch that most developers have.
+However at [Skillfulgorilla](http://skillfulgorilla.com) we believe that sometimes it is about putting your hand up and walking up to the chalkboard and seeing what happens.
 
 Demo: NYI
 
